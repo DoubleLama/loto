@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="index.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="col-4 mx-auto pt-5">
-    <form action="" method="get" name="formLoto">
-        <h1 class="text-center text-success">Bienvenue au Loto</h1>
-        <div>
-          <label for="firstname">Nom :</label>
-          <input type="text" class="form-control" name="firstname" id="firstname">
-        </div>
-        <div>
-            <label for="lastname">Prénom :</label>
-            <input type="text" class="form-control" name="lastname" id="lastname">
+  <div class="col-5 mx-auto">
+    <div class="card card-blog">
+      <div class="card-header card-header-image">
+        <img class="img" src="https://www.people-bokay.com/wp-content/uploads/2019/04/resultat-du-loto-tirage-.jpg"
+          style="height: 150px; object-fit: cover;" />
+        
+        <div class="colored-shadow" style="
+              background-image: url('https://www.people-bokay.com/wp-content/uploads/2019/04/resultat-du-loto-tirage-.jpg');
+              opacity: 1;
+            "></div>
+      </div>
+      <div class="card-title ">
+        <h1 class="title text-center">THP Next Loto</h1>
+      </div>
+      <div class="card-body">
+        <hr>
+        <form action="" method="get" name="formLoto">
+          <div class="pt-5">
+            <input placeholder="Nom ..." type="text" class="pl-4 form-control firstname" name="firstname" id="firstname" />
           </div>
-        <div>
-          <label for="email">Email :</label>
-          <input type="email" class="form-control" name="email" id="email">
-        </div>
-        <div>
-            <label for="lotoNumbers">Premier numéro :</label>
-            <input type="number" class="form-control" name="lotoNumbers" id="lotoNumber1">
+          <div class="pt-5">
+            <input placeholder="Prénom ..." type="text" class="pl-4 form-control lastname" name="lastname" id="lastname" />
           </div>
-        <div>
-            <label for="lotoNumbers">Second numéro :</label>
-            <input type="number" class="form-control" name="lotoNumbers" id="lotoNumber2">
+          <div class="pt-5">
+            <input placeholder="Email ..." type="email" class="pl-4 form-control email" name="email" id="email" />
           </div>
-        <div>
-            <label for="lotoNumbers">Troisième numéro :</label>
-            <input type="number" class="form-control" name="lotoNumbers" id="lotoNumber3">
+          <div class="row pt-5">
+            <div class="col-md-2">
+            <input placeholder="1er n°" type="text" class="text-center form-control" name="lotoNumbers"
+              id="lotoNumber1" />
+            </div>
+            <div class="col-md-2">
+              <input placeholder="2nd n°" type="text" class="text-center form-control" name="lotoNumbers" id="lotoNumber2" />
+            </div>
+            <div class="col-md-2">
+            <input placeholder="3ème n°" type="text" class="text-center form-control" name="lotoNumbers"
+              id="lotoNumber3" />
+            </div>
+            <div class="col-md-2">
+              <input placeholder="4ème n°" type="text" class="text-center form-control" name="lotoNumbers"
+              id="lotoNumber4" />
+            </div>
+            <div class="col-md-2">
+              <input placeholder="5ème n°" type="text" class="text-center form-control" name="lotoNumbers"
+              id="lotoNumber5" />
+            </div>
+            <div class="col-md-2">
+              <input placeholder="6ème n°" type="text" class="text-center form-control" name="lotoNumbers"
+              id="lotoNumber6" />
+            </div>
           </div>
-        <div>
-            <label for="lotoNumbers">Quatrième numéro :</label>
-            <input type="number" class="form-control" name="lotoNumbers" id="lotoNumber4">
+          <div class="form-example pb-3 pt-5 d-flex justify-content-center">
+            <button type="" class="btn btn-lg btn-info" id="checkIt">
+              Je tente ma chance !
+            </button>
           </div>
-        <div>
-            <label for="lotoNumbers">Cinquième numéro :</label>
-            <input type="number" class="form-control" name="lotoNumbers" id="lotoNumber5">
+          <div>
+          <a href="" id="cheat" class="text-muted">Je triche</a>
+          <span></span>
           </div>
-        <div>
-            <label for="lotoNumbers">Sixième numéro :</label>
-            <input type="number" class="form-control" name="lotoNumbers" id="lotoNumber6">
-          </div>
-        <div class="form-example pt-3 d-flex justify-content-center">
-          <button type="" class="btn btn-lg btn-info" id="checkIt">Valider</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-    <script src='index.js'></script>
+  </div>
+  <script src="index.js"></script>
 </body>
+
 </html>
